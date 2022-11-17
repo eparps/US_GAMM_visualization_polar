@@ -112,7 +112,7 @@ plot_GAMM_polar(model=gamm.model, target="V1.V2", var1="a.R", var2="a.NR", title
 
 As shown in the image above, when two categories were specified, the shaded regions indicate the areas where two contours have significant differences.
 
-On the other hand, if we were to show multiple contours (more than 3), use `plot_GAMM_polar_multi()` and specify the categories at the last:
+On the other hand, if we were to show multiple contours (more than 3), use `plot_GAMM_polar_multi()` and specify the categories at the end:
 
 ``` r
 plot_GAMM_polar_multi(model=gamm.model, target="V1.V2", title="a.R & i.R & u.R", "a.R", "i.R", "u.R")
