@@ -101,14 +101,14 @@ library(stringr)
 
 plot_GAMM_polar(model=gamm.model, target="V1.V2", var1="a.R", title="a.R")
 ```
-![output1]()
+![output1](https://github.com/eparps/US_GAMM_visualization_polar/blob/7a77f230a025cde4acf67cd2753b45ba19c6b887/image/output1.png)
 
 If we want to compare the difference between two contours, then specify the other category in `var2`:
 
 ``` r
 plot_GAMM_polar(model=gamm.model, target="V1.V2", var1="a.R", var2="a.NR", title="a.R & a.NR")
 ```
-![output2]()
+![output2](https://github.com/eparps/US_GAMM_visualization_polar/blob/7a77f230a025cde4acf67cd2753b45ba19c6b887/image/output2.png)
 
 As shown in the image above, when two categories were specified, the shaded regions indicate the areas where two contours have significant differences.
 
@@ -117,11 +117,11 @@ On the other hand, if we were to show multiple contours (more than 3), use `plot
 ``` r
 plot_GAMM_polar_multi(model=gamm.model, target="V1.V2", title="a.R & i.R & u.R", "a.R", "i.R", "u.R")
 ```
-![output3]()
+![output3](https://github.com/eparps/US_GAMM_visualization_polar/blob/7a77f230a025cde4acf67cd2753b45ba19c6b887/image/output3.png)
 
 If no category was specified, the function will show all contours:
 
 ``` r
 plot_GAMM_polar_multi(model=gamm.model, target="V1.V2", title="V1.V2")
 ```
-![output4]()
+![output4](https://github.com/eparps/US_GAMM_visualization_polar/blob/7a77f230a025cde4acf67cd2753b45ba19c6b887/image/output4.png)
