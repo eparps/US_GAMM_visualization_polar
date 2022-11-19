@@ -1,5 +1,5 @@
-plot_GAMM_polar_multi = function(model, target, title=NULL,
-                                 df_pal=NULL, subject=NULL, rep=NULL, ...){
+plot_GAMM_polar_multi = function(model, target, title=NULL, ...,
+                                 df_pal=NULL, subject=NULL, rep=NULL){
   vars = list(...)
   if (length(vars) == 0){
     vars = model$xlevels[[target]]
